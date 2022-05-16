@@ -1,0 +1,42 @@
+  ************Github Tutorial***********By @arvin
+>>First initialize the git using the command : $git init
+
+>>The files cannot be added without staging so the files
+  need to be staged using the command : $git add filename.txt
+
+         local files >>staging area >> repository
+           :................................:
+
+>>Then check whether the file is staged or not by using 
+  command : $git status 
+  Note: You need to stage again if edit the file  
+
+>>Now we have to add the stagged file into repo by using 
+  command : $git commit -m "your message here" 
+  (note first time you might get an error )
+
+  To view the commit history : $git log
+  To view commit history in 1 line : $git log --onelline
+  To checkout the unedited file after u commited: 
+  $git checkout 29fe8 ("thats the hash value")
+  to go back after checkout : $get checkout master
+
+  Then we add the origin using command : 
+  $git remote add origin https://github.com/arjit86/python_basics.git
+  (ur url)
+  
+  Push our code to github
+  $git push origin master 
+  Then add the username and password 
+
+>>So config ur email and username using the command : 
+  $git  config --global user.email "youremail@gmail.com"
+  $git config --global user.name"your username"
+
+>>download the file already uploaded on repo 
+  git clone https://github.com/arjit86/python_basics.git
+  (clone url)
+  
+>>To add two files for staging 
+  git add .
+  git diff --staged
